@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html data-ng-app="demoApp">
 <head>
-    <title></title>
+    <title>Data Binding</title>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 <script>
 var demoApp = angular.module('demoApp', ['ngRoute']);
 
-demoApp.config(['$routeProvider', 
+demoApp.config(['$routeProvider',
     function($routeProvider){
         $routeProvider
             .when('/view1',
@@ -36,7 +36,7 @@ demoApp.config(['$routeProvider',
             .otherwise({redirectTo: '/view1'});
 }]);
 
-demoApp.controller('SimpleController', ['$scope', 
+demoApp.controller('SimpleController', ['$scope',
     function($scope){
         $scope.customers = [
             {name: 'John Smith', city: 'Phoenix'},
